@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Jacob Luna Project Homepage</title>
+		<link href="css/HomeStyle.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	
+	</head>
+	
+	<body>
+		<div id="maincontain">
+			<div id="navigation" class="sidenav">
+			
+				<span id="navmenu">Menu</span><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<ul>
+					<li><p><i class="fa fa-home fa-lg" aria-hidden="true"></i></p><a id="link-home" href="#mainheader">Home</a></li>
+					<li><p><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></p><a id="2D" href="#2Dcontain">2D Design</a></li>
+					<li><p><i class="fa fa-television fa-lg" aria-hidden="true"></i></p><a id="web" href="#webDesign">Web Design</a></li>
+					<li><p><i class="fa fa-gamepad fa-lg" aria-hidden="true"></i></p><a id="game" href="#gameDesign">Game Design</a></li>
+					<li><p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></p><a id="about" href="#aboutme">About Me</a></li>
+					<li><p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></p><a id="cont" href="mailto:jaykaljkub@gmail.com">Contact</a></li>
+				
+				</ul>
+			
+			</div>
+			
+			<span id="openbtn" onclick="openNav()"><a href="#">&#9776;</a></span> <span id="title">Portfolio</span>
+		
+			<div id="main">
+				
+			
+				
+				<div id="mainheader">
+					<h1>Jacob Luna</h1>
+					<p>Dreamer <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Designer <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Developer</p>
+				
+							
+				</div>
+				
+				<!-- Begin 2D Design Panel -->
+				<div id="2Dcontain" class="panel designclass">
+					<div id="2Dheader" class="content">
+						<h1>2D Design Projects</h1>							
+					</div>
+					<div class="tip">
+						<p><em>(Click picture see larger image)</em></p>
+					</div>
+					<div class="twoDpanel">
+						<a href="#socjust"><img src="images/smsocjust.jpg" alt="The Art of Compassion"></a>
+						<p><b>The Art of Compassion</b><br />
+						<em>Goal:</em> Create a visually stimulating poster addressing a social issue. <br />
+						<em>Tools: </em> Photoshop; Ink Print; Lino-cut. <br />
+						<em>Design Concepts: </em> Unity; Balance; Framing.<br /></p>
+					</div>
+					<div class="twoDpanel">
+						<a href="#mush"><img src="images/mush.jpg" alt="An Endless Stroll"></a>
+						<p><b>An Endless Stroll</b><br />
+						<em>Goal:</em> Create the illusion of space. <br />
+						<em>Medium/Tools: </em> Bristol paper; Acrylic paints. <br />
+						<em>Design Concepts: </em> Object Placement; Atmospheric Perspective; Focal Point.<br /></p>
+					</div>
+				</div>
+				<!-- End 2D Design panels -->
+								
+				<!-- For 2D design picture panels  -->
+				<div id="socjust" class="panel gallery">
+					<div class="tip">
+						<p><em>(Click picture to go back)</em></p>
+					</div>
+					<a href="#2Dcontain" data-tooltip="testing"><img src="images/socjust.jpg" alt="The Art of Compassion"></a>
+				</div>
+				<div id="mush" class="panel gallery">
+					<div class="tip">
+						<p><em>(Click picture to go back)</em></p>
+					</div>
+					<a href="#2Dcontain"><img src="images/mush.jpg" alt="The Art of Compassion"></a>
+				</div>
+				<!-- End picture panels -->
+				
+				<!-- Begin Web Design Panel -->
+				<div id="webDesign" class="panel webclass">
+					<div id="webdesignheader" class="content">
+						<h2>Web Design Projects</h2>
+					</div>
+					<div class="tip">
+						<p><em>(Click picture to visit page)</em></p>
+					</div>
+					<div class="webpanel">
+						<a href="sites/project 2/Project2.html"><img src="images/jgg.jpg" alt="Javascript Guessing Game"></a>
+						<p><b>Javascript Guessing Game</b><br /><em>Goal:</em> Create a number guessing game. <br />
+						<em>Tools: </em> HTML; CSS; Javascript <br />
+						<em>Core Concepts: </em> Input/Output; Random Number Generator; Computations; Interface Design<br /></p>
+					</div>
+					<div class="webpanel">
+						<a href="sites/project3/Project3.html"><img src="images/rps.jpg" alt="Rock Paper Scissors"></a>
+						<p><b>Rock Paper Scissors</b><br /><em>Goal:</em> Create a program able to play Rock-Paper-Scissors. <br />
+						<em>Tools: </em> HTML; CSS; Javascript <br />
+						<em>Core Concepts: </em> Event Handling; Score Keeping; Interface Design.<br /></p>
+					</div>
+				</div>
+				<!-- End Web Design Panel -->
+				
+				<!-- Begin Game Design Panel -->
+				<div id="gameDesign" class="panel gameclass">
+					<div id="gameheader" class="content">
+						<h1>Game Design</h1>	
+					</div>
+					<div id="gamecont">
+						<img src="images/2dgame.jpg" alt="Robo Adventures">
+						<p><b>Robo Adventures</b><br /><em>Goal:</em> Create a 2D platform game <br />
+						<em>Tools: </em> Unity; Photoshop; C++ <br />
+						<em>Core Concepts: </em> Setting up game world; 2D colliders; Scripts.<br /></p>
+					</div>
+				</div>
+				<!-- End Game Design Panel -->
+				
+				<!-- Begin About Panel -->
+				<div id="aboutme" class="panel aboutclass">
+					<div id="aboutheader" class="content">
+						<h1>About Me</h1>	
+					</div>
+					<div class="content aboutcont">
+						<img src="images/self.jpg" alt="Selfie">
+						<p>I'm a 28 year old living in Seattle, Wa. Born and raise in southern Idaho I moved to Seattle in 2008. I have always had a fascination with new technology and hope to eventually make it into the VR/AR field.</p>
+					</div>
+					<div class="content aboutcont">
+						<a href="https://www.linkedin.com/in/jacob-luna-5297537b/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/jacob.luna.35"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/jaykaljkub"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<!-- End About Panel -->
+				
+			</div>
+		</div>
+	<script src="js/Homescript.js"></script>
+	</body>
+	<footer>
+	
+	<p>All Rights Reserved.</p><p>Powered by : Jacob</p>
+	
+	</footer>
+</html>

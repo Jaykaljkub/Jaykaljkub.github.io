@@ -1,0 +1,435 @@
+
+/* ********** Main Body of the website ************ */
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 95%;
+	width: 100%;
+	background-color: #111;
+	
+}
+
+/*  ****** BEGIN Navigation Panel ****** */
+
+#navmenu{
+	display: inline;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+ 	color: gray;
+	margin-left: 10px;
+
+}
+
+	
+#main {
+	height: 100%;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+	#mainheader h1 {font-size: 36px;}
+}
+
+/***** The side navigation menu *****/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/**** The navigation menu links ****/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav li {
+	list-style: none;
+	transition: 0.3s;
+
+}
+
+.sidenav i {
+	float: left;
+	padding: 15px;
+	color: white;
+	margin-left: 0px;
+	position: relative;
+	z-index: -3;
+
+}
+
+/**** Link effect *****/
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/**** Position and style the close button (top right corner) ****/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+/**** button style ****/
+#openbtn{
+	font-size: 35px;
+	padding-left: 20px;
+	padding-top: 15px;
+	color: white;
+}
+
+#openbtn a{
+	text-decoration: none;
+	color: white;
+}
+
+#openbtn a:visited{
+	color: white;
+}
+
+#title{
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+}
+
+/*********** END Navigation panel**********/
+
+/******* BEGIN CSS transition *******/
+
+/***** General Panel Stylization ****/
+.panel{
+	height:0%;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-left: -150%;
+	position: relative;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	z-index: 2;
+	-webkit-transition: all 1.2s ease-in-out;
+	-moz-transition: all 1.2s ease-in-out;
+	-o-transition: all 1.2s ease-in-out;
+	transition: all 1.2s ease-in-out;
+}
+
+.panel:target{
+	height: 100%;
+	margin: 0 auto;
+	border: 5px solid white
+	
+}
+/***** End CSS Transition *****/
+
+
+/** General Content within panels Stylization **/
+.content{
+	font-family: "sans-serif";
+	position: relative;
+	width: 60%;
+	height: 30%;
+	z-index: 0;
+	top: -5%;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;
+	max-height: 178px;
+	max-width: 650px;
+}
+
+.content h1 {
+	border: 9px solid #214545;
+	font-size: 72px;
+	font-weight: normal;
+	color: #214545;
+}
+
+.content h2{
+	border: 9px solid #ffffff;
+	font-size: 72px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.content p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: #214545;
+	display: inline-block;
+	background: rgba(255,255,255,0.6);
+	padding: 10px;
+	margin: 30px 10px;
+	border-radius: 20px;
+}
+
+
+
+/******* BEGIN MainPage Landing*******/
+
+#maincontain{/* The Main Background Image */
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(33, 69, 69, 0.7), rgba(33, 69, 69, 0.7)), url("../images/BookShelfHeader.jpg");
+    background-image: -moz-linear-gradient(top, rgba(33, 69, 69, 0.7), rgba(33, 69, 69, 0.7)), url("../images/BookShelfHeader.jpg");
+    background-image: -o-linear-gradient(top, rgba(33, 69, 69, 0.7), rgba(33, 69, 69, 0.7)), url("../images/BookShelfHeader.jpg");
+    background-image: -ms-linear-gradient(top, rgba(33, 69, 69, 0.7), rgba(33, 69, 69, 0.7)), url("../images/BookShelfHeader.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 69, 69, 0.7)), to(rgba(33, 69, 69, 0.7))), url("../images/BookShelfHeader.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(33, 69, 69, 0.7), rgba(33, 69, 69, 0.7)), url("../images/BookShelfHeader.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#mainheader p{
+	text-align: center;
+	font-size: 30px;
+	font-weight: italic;
+	color: white;
+}
+
+#mainheader h1{
+	text-align: center;
+	font-size: 72px;
+	font-weight: bold;
+	color: white;
+}
+
+/*******Begin 2D Design Page *******/
+
+.designclass:target{
+	height: 70%;
+	width: 100.%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../images/Pencil.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 5px solid rgb(33, 69, 69);
+}
+
+.designclass img{
+	width: 95%;
+	height: 64%;
+	align-self: center;
+	border-radius: 25px;
+	border: solid 2px rgb(33, 69, 69);
+}
+
+
+#2Dcontain{
+	height: 60%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../images/Pencil.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/Pencil.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#2Dheader{
+	font-family: "sans-serif";
+	position: relative;
+	width: 65%;
+	height: 40%;
+	z-index: 0;
+	top: 18%;
+	margin: auto;
+	border: 4px solid #214545;
+	text-align: center;
+	overflow: hidden;
+	max-height: 250px;
+	max-width: 650px;
+}
+
+#2Dheader h1{
+	font-size: 72px;
+	font-weight: normal;
+	color: #214545;
+}
+
+.twoDpanel{
+    margin-left: 25%;
+    margin-top: 3%;
+	margin-bottom: .5%;
+    display: flex;
+}
+
+.twoDpanel p {
+	margin-left: 25px;
+	margin-top: 9%;
+}
+
+.twoDpanel a {
+	width: 38%;
+	height: 64%;
+}
+
+.gallery{
+	background-color: rgba(255,255,255, .7);
+}
+
+.gallery img{
+	width: 99%;
+    margin: .5%;
+}
+
+/***** Begin WebDesign Page *****/
+
+.webclass:target{
+	height: 70%;
+	width: 100.%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/WebDesignAlt.jpg");
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/WebDesignAlt.jpg");
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/WebDesignAlt.jpg");
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/WebDesignAlt.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../images/WebDesignAlt.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/WebDesignAlt.jpg");
+	background-size: 100%;
+	background-size: 101%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: solid 5px rgb(33, 69, 69);
+}
+
+.webclass img{
+	width: 75%;
+	height: 64%;
+	border-radius: 25px;
+	border: solid 2px rgb(33, 69, 69);
+	margin-bottom: 1%;
+}
+
+.webpanel{
+    margin-left: 25%;
+    margin-top: 1%;
+    display: flex;
+}
+
+.webpanel a{
+	width: 38%;
+	height: 64%;
+}
+
+.webpanel p {
+	margin-left: -46px;
+	margin-top: 9%;
+	margin-bottom: .5%;
+}
+
+#webdesignheader h2{
+	font-size: 72px;
+	font-weight: normal;
+	color: #214545;
+	border: 10px solid #214545;
+}
+
+.tip{
+	color:rgb(33, 69, 69);
+	text-align: center;
+}
+
+/****** Begin Game Design Panel ******/
+.gameclass:target{
+	height: 70%;
+	width: 100.%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/gamedesign_bck1.jpg");
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/gamedesign_bck1.jpg");
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/gamedesign_bck1.jpg");
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/gamedesign_bck1.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../images/gamedesign_bck1.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/gamedesign_bck1.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 5px solid rgb(33, 69, 69);
+}
+
+#gamecont{
+	display: flex;
+	
+}
+
+#gamecont p{
+	margin-top: 9%;
+	margin-left: 20px;
+}
+
+#gamecont img{
+	width: 55%;
+    height: 20%;
+    margin-left: 25px;
+	border-radius: 25px;
+	border: solid 5px rgb(33, 69, 69);
+}
+
+/******* Begin About Me Page *******/
+
+.aboutclass:target{
+	height: 70%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 5px solid rgb(33, 69, 69);
+}
+
+.aboutclass img{
+	width: 25%;
+	height: 98%;
+	border-radius: 25px;
+	border: solid 2px rgb(33, 69, 69);
+}
+
+.aboutcont{
+	display: flex;
+	overflow: visible;
+	margin-top: 1%;
+}
+
+.aboutcont a {
+	margin-left: 20px;
+	margin-top: 10px;
+	color: white;
+	font-size: x-large;
+}
+
+.aboutcont a:hover {
+	color: rgb(33, 69, 69);
+}
+
+#aboutme{
+	display:block;
+}
+
+/****** Begin Footer ******/
+footer{
+	color:white;
+	margin: 0, auto;
+	margin-left: 50%;
+}

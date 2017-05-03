@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Guess</title>
+	<link href="css/project2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		<h1>Javascript Guessing Game</h1>
+	</header>
+	
+	<div id="rulescreen">
+		<figure>
+			<img src="images/ft01.jpg" alt="Fortune Teller" width="60%" height="30%"></img>
+		</figure>
+		<p>As I gaze into the crystal ball I see a number. In order for you to leave here with your freedom,
+		you must guess what the number is. The number is between <span class="rulesNum">1 and 50</span>. <br /> You will have only <span class="rulesNum">6 guesses</span>.  I suggest you use them wisely. 
+		<br />If you fail, then you will do all that I ask of you.</p>
+		<button id="startbtn" class="btn">Begin!</button>
+	</div>
+	
+	<div id="gamescreen">
+		<div id="gameContent">
+		<figure>
+			<img src="images/ft02.jpg" alt="Fortune Teller" width="60%" height="30%"></img>
+		</figure>
+			<p>Can you succeed with only 6 chances?</p>
+			<p>So far you have used - <span id="guesses">0</span> try(s)</p>
+			<p>Enter your guess: <input type="text" id="input"></input><button id="submitbtn" class="btn">Take a Guess</button></p>
+			<p>Game Statues: <span id="response"></span></p>
+		</div>
+		
+		<button id="reloadbtn" class="btn">Restart</button>
+	</div>
+	
+<script src="js/project2.js"></script>
+</body>
+<footer>
+	<a href="../../index.html">BACK</a>
+</footer>
+</html>

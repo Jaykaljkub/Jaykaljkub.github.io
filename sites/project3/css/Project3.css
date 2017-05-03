@@ -1,0 +1,100 @@
+html {
+	background-color: #D8CAA8;
+}
+
+body{
+	color: #284907;
+	display: block;
+	
+}
+
+#gamestats {
+	display: flex;
+}
+
+#wrapper {
+	display: block;
+	margin: 0px auto;
+}
+
+header img {
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+
+li {
+	text-decoration: none;
+	display: inline;
+}
+
+footer a {
+	color: #284907;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+button {
+	background:    #6aa84f;
+	background:    -webkit-linear-gradient(#274e13, #6aa84f 50%, #274e13);
+	background:    linear-gradient(#274e13, #6aa84f 50%, #274e13);
+	border-radius: 999px;
+	color:         #d8caa8;
+	display:       block;
+	padding:       8px 20px;
+	font:          normal 700 24px/1 "Droid Serif", serif;
+	text-align:    center;
+	text-shadow:   1px 1px 0 #000;
+	margin: 0px auto 5px auto;
+}
+
+img {
+	border-radius: 15px;
+}
+
+#rulescreen {
+	border: 2px solid #382513;
+	border-radius: 15px;
+	width: 600px;
+	display: block;
+	margin: 0px auto;
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+	box-shadow: 5px 5px 90px #363942;
+}
+
+#rulescreen img {
+	display: block;
+	margin: 0px auto;
+}
+
+span {
+	color: green;
+}
+
+#gamescreen {
+	font-size: 15px;
+	text-align:center;
+	border: 2px solid #382513;
+	border-radius: 15px;
+	width: 600px;
+	display: none;
+	margin: 0px auto;
+	box-shadow: 5px 5px 90px #363942;
+}
+
+#endCap {
+	display: flex;
+}
+
+#endscreen {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	border: 2px solid #382513;
+	border-radius: 15px;
+	width: 600px;
+	display: none;
+	margin: 0px auto;
+	box-shadow: 5px 5px 90px #363942;
+}

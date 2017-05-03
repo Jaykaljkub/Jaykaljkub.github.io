@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Project 3 </title>
+		<link href="css/Project3.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<img src="images/logoMain.jpg" alt="Main Logo" width="450" height="150">
+			</header>
+			
+			<div id="rulescreen">
+				<figure>
+				<img src="images/chooseweap.jpg" alt="Rules image" width="450" height="350"><br/>
+				</figure>
+				<h2>Rules and Stuff</h2>
+				<p>Welcome to the Javascript rock, paper, scissors game. To play you must choose either rock, paper, or scissors.
+					The rules are that rock will crush scissors and be covered by paper, thus losing to paper and winning to scissors. Choosing
+					paper will mean that against rock your will win but against scissors you will lose. Scissors, therefore, lose to rock and win against paper.</p>
+				<button id="startbtn"> Start </button>
+			</div>
+			
+			<div id="gamescreen">
+				<div class="pickholder">
+					<h2> Champion please choose your weapon!</h2>
+					<figure>
+						<ul id="playerlist">
+							<li><img src="images/rock.jpg" alt="" width="150" height="150" class="human"></li>
+							<li><img src="images/paper.jpg" alt="" width="150" height="150" class="human"></li>
+							<li><img src="images/scissors.jpg" alt="" width="150" height="150" class="human"></li>
+						</ul>
+					</figure>
+				</div>
+				
+				<div id="gamestats">
+					<figure>
+						<img src="images/ruleswin.jpg" alt="Rules image" width="120" height="120">	
+					</figure>
+					<div>
+						<h3>Game Stats -Round: <span id="rounds"></span></h3>
+						<p>Gifted Champion Chooses: <span id="playerschoice"></span></p>
+						<p>Computer selects : <span id="compchoice"></span></p>
+						<p><span id="resultsmessage"></span></p>
+						<p id="scores">Champion: <span id="playerscore"></span> Computer: <span id="compscore"></span> Ties: <span id="ties"></span></p>
+					</div>
+				</div>
+				
+				<div class="pickholder">
+					<h2> The computer chooses to respond with:</h2>
+					<figure>
+						<ul id="complist">
+							<li><img src="images/rock.jpg" alt="" width="150" height="150" class="comp"></li>
+							<li><img src="images/paper.jpg" alt="" width="150" height="150" class="comp"></li>
+							<li><img src="images/scissors.jpg" alt="" width="150" height="150" class="comp"></li>
+						</ul>
+					</figure>
+					<button id="endbtn"> End </button>
+				</div>
+			</div>
+			
+			<div id="endscreen">
+				<div id="endCap">
+					<figure>
+					<img src="images/keepcalm.jpg" alt="Rules image" width="350" height="450"><br/>
+					</figure>
+					
+					<p>Game Stats <br /><br />Champion:<br /> <span id="playerscoreEnd"></span> <br />Computer: <br /><span id="compscoreEnd"></span> <br /> Ties: <br /><span id="tiesEnd"></span></p>
+				</div>  
+				<button id="resetbtn"> Again </button>
+
+		</div>	
+	<script src="js/Project3.js"></script>
+	</body>
+	<footer>
+		<a href="../../index.html">BACK</a>
+	</footer>
+</html>
+	
